@@ -62,7 +62,7 @@ async def on_message(message):
             await message.mentions[0].add_roles(role)
 
     if message.content.startswith("!도움말"):
-        await message.channel.send(f'{message.author.mention} 님 디엠을 확인해주세요')
+        await message.channel.send(f'{message.author.mention} 님 을 확인해주세요')
         embed=discord.Embed(title='봇 도움말', description='봇을 많이 사용 해주세요')
         embed.add_field(name='사연 보내기', value='<#836241957435998239> 방에서 !사연 <할말> 로 사연을 보내보세요!')
         embed.add_field(name='건의사항 전송하기', value='봇의 DM 채널에서 !건의 <건의사항> 으로 건의사항을 보내주세요!')
