@@ -83,14 +83,14 @@ async def on_message(message):
 
     if message.content.startswith("!건의"):
         if message.channel.type is discord.ChannelType.private:
-            await message.channel.send("제대로 건의가 전송되었습니다")
+            await message.channel.send("정상적으로 건의가 전송되었습니다")
             ss = message.content[4:]
-            embed1=discord.Embed(title='사연이 전송됨', description='관리자님 내용을 검토해주세요')
+            embed1=discord.Embed(title='건의가 왔습니다', description='관리자님 내용을 검토해주세요')
             embed1.add_field(name='전송자', value=f'{message.author.mention}')
             embed1.add_field(name='전송된 건의사항 : ', value=ss, inline=False)
             embed1.add_field(name=f'전송자 아이디 : {message.author.id}', value='내용이 부적절할시 이에따른 처벌을 내려주세요')
             embed1.set_footer(text='!전송 <@아이디> 로 답변 부탁드릴게요!')
-            await client.get_channel(836031569230561321).send(embed=embed1)
+            await client.get_channel(837914082463055892).send(embed=embed1)
         else:
             await message.channel.send("건의사항은 DM으로 부탁드릴게요")
 
