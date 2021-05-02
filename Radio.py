@@ -219,7 +219,7 @@ async def on_message(message):
         embed2=discord.Embed(title='다음 아래중 골라주세요', description='선택해주세요')
         embed2.add_field(name='비공개 익명 전송', value='1️⃣ 를 선택해주세요')
         embed2.add_field(name='공개 전송', value='2️⃣ 를 선택해주세요')
-        embed2.add_field(name='메시지 ', value='3️⃣ 를 선택해주세요')
+        embed2.add_field(name='사연 취소 ', value='3️⃣ 를 선택해주세요')
         msg = await message.channel.send(embed=embed2)
         ss = message.content[4:]
 
